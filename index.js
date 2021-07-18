@@ -60,7 +60,7 @@ router.post('/', (req, res) => {
   const { titulo, autor, ano, status} = req.body
   const currentContent = readFile()
 
-  const numero = Math.floor(Math.random() * 100) + 3;
+  const numero = Math.floor(Math.random() * 100);
   
   console.log(numero)
   currentContent.push({ numero, titulo, autor, ano, status}) 
